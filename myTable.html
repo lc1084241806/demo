@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MyTable</title>
+    <style>
+        /* 表格 */
+        #t1{
+            width: 990px;
+            font-size: 12px;
+            line-height: 20px;
+            border-bottom: 1px solid #000;
+        }
+        /* 首行 */
+        #t1 .t1-thread{
+            color: #666;
+        }
+        /* 首行所有单元格 */
+        #t1 .t1-thread td{
+            border-bottom: 1px solid #000;
+        }
+        /* 首行第一个元格 */
+        #t1 .t1-thread .t1-thread-first_td{
+            width: 610px;
+        }
+
+        /* 其它行 */
+        #t1 .t1-tbody{
+            color: #9c9a9c;
+        }
+        /* 其它行的所有单元格 */
+        #t1 .t1-tbody td{
+            border-bottom: 1px dashed #000;
+        }
+        /* 其它行的所有a */
+        #t1 .t1-tbody a{
+            color: #005aa0;
+            text-decoration: none;
+        }
+        /* 其它行的所有a的待激活状态 */
+        #t1 .t1-tbody a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="t1">
+        <thead class="t1-thread">
+            <tr>
+                <td class="t1-thread-first_td">主题</td>
+                <td>恢复/浏览</td>
+                <td>作者</td>
+                <td>时间</td>
+            </tr>
+        </thead>
+        <tbody class="t1-tbody">
+            <tr class="t1-tbody-tr">
+                <td><a href="#">银灰色的很酷</a></td>
+                <td>0/0</td>
+                <td><a href="#">2001年冬天</a></td>
+                <td>2014-11-19 13:54:40</td>
+            </tr>
+            <tr>
+                <td><a href="#">性价比超高，活动给力</a></td>
+                <td>0/0</td>
+                <td><a href="#">xpx2001</a></td>
+                <td>2014-11-18 10:21:29</td>
+            </tr>
+            <tr>
+                <td><a href="#">外形精致，值得购买</a></td>
+                <td>0/0</td>
+                <td><a href="#">xpx2001</a></td>
+                <td>2014-11-18 15:27:58</td>
+            </tr>
+            <tr>
+                <td><a href="#">支持，不错</a></td>
+                <td>0/0</td>
+                <td><a href="#">2001年冬天</a></td>
+                <td>2014-11-19 10:22:27</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
