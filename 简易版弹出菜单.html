@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>简易版 弹出菜单</title>
+    <style>
+        #menu{
+            width: 100px;
+            height: 30px;
+            background: #dddddd;
+            text-align: center;
+            line-height: 30px;
+            margin-left: 300px;
+            position: relative;
+        }
+        #sub-menu{
+            width: 300px;
+            height: 100px;
+            background: #dddddd;
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            /* 默认为隐藏 */
+            display: none; /* block 显示 */
+        }
+        #menu:hover>#sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">果园公告
+        <div id="sub-menu">
+            果园公告子菜单
+        </div>
+    </div>
+
+</body>
+</html>
