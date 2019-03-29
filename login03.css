@@ -1,53 +1,56 @@
-p,h2{
-    margin:0;
+p,
+h2 {
+    margin: 0;
     padding: 0;
 }
 
-#container{
+#container {
     width: 800px;
     margin: 0 auto;
 }
 
-#container>h2{
-    color:#999;
+#container>h2 {
+    color: #999;
     font-weight: normal;
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-#container>p{
+#container>p {
     border: 1px solid #000;
     float: left;
 }
 
-#login{
+#login {
     float: right;
     padding-top: 50px;
 }
 
-#login .form-line{
+#login .form-line {
     margin-bottom: 25px;
-    overflow: hidden;   /* 目的是将 .form-line的高度撑起来 */
+    overflow: hidden;
+    /* 目的是将 .form-line的高度撑起来 */
 }
 
-#login .form-line>p{
+#login .form-line>p {
     float: left;
     font-size: 16px;
     color: #999;
-    width:64px; /*每个文字是16px宽，按照文字数+1的宽度给*/
+    width: 64px;
+    /*每个文字是16px宽，按照文字数+1的宽度给*/
     height: 40px;
     text-align: right;
     padding-right: 20px;
     line-height: 40px;
 }
 
-#login .form-line>div{
+#login .form-line>div {
     float: left;
     width: 300px;
 }
 
-#login .form-control{
+#login .form-control {
     /* 宽，高，边框，box-sizing，取消轮廓,左右内边距 */
     width: 300px;
     height: 40px;
@@ -56,32 +59,36 @@ p,h2{
     outline: none;
     padding: 0 15px;
 }
-#login .form-control:focus{
+
+#login .form-control:focus {
     /* 边框颜色，边框阴影 */
     border-color: #64a131;
     box-shadow: 0 0 5px #64a131;
 }
 
-#login .form-line>div>p{
+#login .form-line>div>p {
     float: right;
 }
 
-#login .form-line>div>p a{
+#login .form-line>div>p a {
     color: #999;
     text-decoration: underline;
 }
-#login .isSaved{
+
+#login .isSaved {
     width: 18px;
     height: 18px;
     vertical-align: middle;
 }
 
 
-#login .goRegister{
+#login .goRegister {
     /* 浮动框特性 */
     float: right;
 }
-#login .goRegister, .btnLogin{
+
+#login .goRegister,
+.btnLogin {
     /* 框特性 */
     width: 145px;
     height: 38px;
@@ -94,9 +101,34 @@ p,h2{
     line-height: 38px;
     text-decoration: none;
     color: #7BAE55;
-    font-size: 16px; 
+    font-size: 16px;
 }
-#login .btnLogin{
-    background:#64a131;
+
+#login .btnLogin {
+    background: #64a131;
     color: #fff;
+}
+
+.goRegisterImg {
+    position: absolute;
+    top: 240px;
+    left: 110px;
+
+    /* 框特性 */
+    width: 145px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1px solid #64a131;
+    border-radius: 5px;
+    background: #F5FFED;
+    /* 文本特性 */
+    text-align: center;
+    line-height: 38px;
+    text-decoration: none;
+    color: #7BAE55;
+    font-size: 16px;
+}
+
+.ImgP{
+    position: relative;
 }
